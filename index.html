@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="calculator">
+            <h1 id="title">Calculeitor</h1>
+            <div id="text">
+                <input id="result" type="text" placeholder="Digite sua duvída" value="" />
+            </div>
+                <div class="itens">
+
+                        <button class="but" id="1" value="1">1</button>
+                        <button class="but" id="2" value="2">2</button>
+                        <button class="but" id="3" value="3">3</button>
+                        <button class="but" id="+" value="+">+</button> 
+                        <button class="but" id="4" value="4">4</button>
+                        <button class="but" id="5" value="5">5</button>
+                        <button class="but" id="6" value="6">6</button>
+                        <button class="but" id="-" value="-">-</button>
+                        <button class="but" id="7" value="7">7</button>
+                        <button class="but" id="8" value="8">8</button>
+                        <button class="but" id="9" value="9">9</button>
+                        <button class="but" id="/" value="÷">÷</button>
+                        <button class="but special" id="back">Apagar</button>
+                        <button class="but" id="0" value="0">0</button>
+                        <button class="but special" id="enter">Enter</button>
+                        <button class="but" id="history"><img src="./image/de-volta.png"  title="costas ícones"></button>
+                </div>
+                <div class="resultMat">
+
+                    <div class="visual">
+                        <h2>Operação</h2>
+                        <div class="card">
+                            <div class="titleResul">
+                                <p>a conta passada foi...</p>
+                            </div>
+                            <div class="cardRes">
+                                <p id="integeCont"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="visual">
+                        <h2>Resultado</h2>
+                        <div class="card">
+                            <div class="titleResul">
+                                <p>O valor da operação foi...</p>
+                            </div>
+                            <div class="cardRes">
+                                <p id="visor"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history">
+                    <div class="titleHistory">
+                        <button id="exit"><img width="14px" src="./image/exit.png"></button>
+                        <h2>Histórico</h2>
+                    </div>
+                    <div class="list">
+                        <div class="obj">
+                            <div class="re">
+                                <p class="date">5/4/2000</p>
+                                <Button>excluír</Button>
+                            </div>
+                            <div class="pCont">
+                                <p>3+3 = 6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script type="module"   src="./scripts/mathematicalLogic.js"></script>
+    <script type="module"   src="./scripts/buttonsHTML.js"></script>
+    <script type="module"   src="./scripts/history.js"></script>
+</body>
+</html>

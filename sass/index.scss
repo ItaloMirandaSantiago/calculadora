@@ -1,0 +1,12 @@
+@import "./mixin.scss";
+@import "./calculator.scss";
+@import "./result.scss";
+@import "./history.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: darkgray;
+}
+

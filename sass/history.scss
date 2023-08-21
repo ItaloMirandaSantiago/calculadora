@@ -1,0 +1,55 @@
+@import "./mixin.scss";
+
+.history{
+    display: none;
+    position: absolute;
+    width: 70%;
+    height: 88%;
+    border-radius: 8%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    top: 10%;
+    left: 15%;
+    .titleHistory{
+        margin-top: 4px;
+        margin-bottom: 10px;
+        h2{
+            display: inline
+        }
+        button{
+            position: absolute;
+            left: 5%;
+            top: 10px;
+        }
+    }
+}
+
+.list{
+    
+    .obj{
+        @include flexCenter();
+        gap: 6px;
+
+    }
+
+    .re{
+        @include flexCenter();
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: grey;
+        
+        bUtton{
+            margin-left: 10px;
+        }
+    }
+    .pCont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: #a0a0eb;
+        p{
+            margin: 0;
+        }
+    }
+}

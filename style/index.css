@@ -1,0 +1,154 @@
+.calculator {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.calculator .itens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+}
+.calculator #result {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+.calculator .but {
+  cursor: pointer;
+  height: 48px;
+  width: 60%;
+  max-width: 200px;
+  overflow: hidden;
+  border: none;
+  background-color: azure;
+}
+.calculator .but img {
+  max-width: 30%;
+}
+.calculator .but:hover {
+  background-color: antiquewhite;
+}
+.calculator #text {
+  margin: 2% 0 2%;
+}
+
+.resultMat {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+}
+.resultMat .historico {
+  width: 100%;
+  margin: 1rem -15px 0;
+  border: solid #f7f7f9;
+}
+.resultMat .visual {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  grid-template-rows: 1fr auto;
+}
+.resultMat .visual .card {
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  height: 100%;
+}
+.resultMat .visual .card .titleResul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.resultMat .visual .cardRes {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  flex-direction: column;
+  display: flex;
+  color: white;
+  height: 100%;
+  overflow: auto;
+}
+
+.history {
+  display: none;
+  position: absolute;
+  width: 70%;
+  height: 88%;
+  border-radius: 8%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  top: 10%;
+  left: 15%;
+}
+.history .titleHistory {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.history .titleHistory h2 {
+  display: inline;
+}
+.history .titleHistory button {
+  position: absolute;
+  left: 5%;
+  top: 10px;
+}
+
+.list .obj {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.list .re {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: grey;
+}
+.list .re bUtton {
+  margin-left: 10px;
+}
+.list .pCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #a0a0eb;
+}
+.list .pCont p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: darkgray;
+}
+
+/*# sourceMappingURL=index.css.map */

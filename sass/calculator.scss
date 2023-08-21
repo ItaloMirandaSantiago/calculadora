@@ -1,0 +1,36 @@
+@import "./mixin.scss";
+
+.calculator{
+    @include flexCenter();
+    .itens{
+        @include grid();
+    }
+    #result{
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        border: none;
+        margin-bottom: 10px;
+        border-radius: 50px;
+    }
+
+    .but{
+        cursor: pointer;
+        height: 48px;
+        width: 60%;
+        max-width: 200px;
+        overflow: hidden;
+        border: none;
+        background-color: azure;
+        img{
+            max-width:30%;
+        }
+        &:hover{
+            background-color: antiquewhite;
+        }
+    }
+
+    #text{
+        margin: 2% 0 2%;
+    }
+}
